@@ -1,6 +1,7 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
+    background-image: linear-gradient(-90deg, #705543 0%, #959657 22%, #9f9e6f 31%, #787468 42%, #948672 52%, #d1bb99 63%, #E1AD85 79%, #667882 100%); display: block; width: 100%; height: 100%;
     color: #222;
     font-size: 1em;
     line-height: 1.4;
@@ -55,8 +56,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
+body { width: 100%; height: 100%; position: relative; top: -16px; overflow: hidden;}
+.intro-page { background-image: url('../img/jorge.png'); background-size: 100% auto; background-repeat: no-repeat; background-position: top left; border-top: 2px solid rgba(255,255,255,.25); margin: 0!important; width: 100%; height: 100%; display: block;}
+header { width: 100%; background-color: rgba(255,255,255,.5); min-height: 90px; padding: 15px 30px; text-align: center;}
 
 
 
