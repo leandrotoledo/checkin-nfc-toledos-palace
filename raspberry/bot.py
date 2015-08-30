@@ -9,6 +9,3 @@ class ToledosPalaceBot(object):
 
    def checkIn(self, name):
       self.bot.sendMessage(CHAT_ID, "%s fez check-in em Toledo's Palace!" % name)
-
-bot = ToledosPalaceBot()
-bot.checkIn('Rafael')
