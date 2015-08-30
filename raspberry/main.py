@@ -17,5 +17,5 @@ while True:
     else:
         line = match.group()
         find = line.find(',')
-        if find:
-            ToledosPalaceBot.checkIn(line[find:])
+        if find > 0:
+            ToledosPalaceBot.checkIn(line[find:].replace(',',''))
