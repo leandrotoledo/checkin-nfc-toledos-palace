@@ -14,21 +14,17 @@
             <small class="description">Hostel, Bar e Casa do ¡Jorge!</small>
         </header>
         <section class="intro-page">
+            {% for tag in tags %}
             <form class="info-container" method="post" action="/">
-                <h1>Identifique-se, humano!</h1>
-                {% for tag in tags %}
                 <label for="id-nfc" class="nfc-receiver-desc">Essa é a sua tag: {{ tag.0 }}</label>
                 <input type="hidden" value="{{ tag.0 }}" class="nfc-receiver" name="id-nfc"/>
-                <button class="button" type="submit">Submeter tag NFC</button>
-                {% endfor %}
-            </form>
-            <form class="info-container" method="post" action="/">
-                {% for tag in tags %}
+
                 <label for="name-nfc">Nome</label>
                 <input type="text" value="{{ tag.1 }}" name="name-nfc" />
-                <button class="button" type="submit">Entrar no palácio</button>
-                {% endfor %}
+
+                <button class="button" type="submit">Submeter tag NFC</button>
             </form>
+            {% endfor %}
         </section>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="../static/js/main.js"></script>
