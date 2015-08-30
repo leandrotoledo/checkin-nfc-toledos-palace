@@ -65,7 +65,7 @@ header { width: 100%; background-color: rgba(255,255,255,.5); min-height: 90px; 
 h1 {color: #8D9B9C; font-size: 32px; font-weight: 300; margin-top: 0px; }
 .info-container { border-bottom: 3px solid #A6D20E; border-radius: 3px; display: block; max-width: 960px; width: 100%; margin: 20px auto; background-color: rgba(255,255,255,.65); padding: 20px; position: relative;}
 input { display: inline-block;}
-button { background-color: #A6D20E; border-radius: 3px; color: #536907; border: 0; padding: 8px 15px; font-size: 18px; position: absolute; bottom: -22px; left: 50%; margin-left: -82px; }
+.button { background-color: #A6D20E; border-radius: 3px; color: #536907; border: 0; padding: 8px 15px; font-size: 18px; position: absolute; bottom: -22px; left: 50%; margin-left: -82px; }
 label, input { display: block; font-size: 14px;}
 input {  margin: 10px auto; border: 2px solid #536907; border-radius: 3px; background-color: rgba(255,255,255,.5); padding: 5px;}
 
