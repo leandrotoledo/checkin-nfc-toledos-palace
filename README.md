@@ -1,1 +1,0 @@
-# checkin-nfc-toledos-palace
