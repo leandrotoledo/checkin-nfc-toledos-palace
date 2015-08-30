@@ -16,8 +16,9 @@ while True:
         nfc.write(line+'\n')
         nfc.close()
     else:
-        line = match.group()
-        find = line.find(',')
-        if find > 0 and last_checking != line[find:].replace(',',''):
-            last_checking = line[find:].replace(',','')
-            ToledosPalaceBot.checkIn(line[find:].replace(',',''))
+        if(match):
+            line = match.group()
+            find = line.find(',')
+            if find > 0 and last_checking != line[find:].replace(',',''):
+                last_checking = line[find:].replace(',','')
+                ToledosPalaceBot.checkIn(line[find:].replace(',',''))
