@@ -3,6 +3,7 @@ import re
 from bot import ToledosPalaceBot
 
 ser = serial.Serial('/dev/ttyACM0', 9600)
+last_checking = '';
 
 while True:
     line = ser.readline().strip()
@@ -17,5 +18,6 @@ while True:
     else:
         line = match.group()
         find = line.find(',')
-        if find > 0:
+        if find > 0 and last_checking != line[find:].replace(',',''):
+            last_checking = line[find:].replace(',','')
             ToledosPalaceBot.checkIn(line[find:].replace(',',''))
