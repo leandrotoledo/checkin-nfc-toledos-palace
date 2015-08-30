@@ -17,9 +17,9 @@
             <form class="info-container" method="post" action="/">
                 <h1>Identifique-se, humano!</h1>
                 {% for tag in tags %}
-                <label for="id-nfc" class="nfc-receiver-desc">Encoste seu celular com NFC no leitor.</label>
+                <label for="id-nfc" class="nfc-receiver-desc">Essa é a sua tag: {{ tag.0 }}</label>
                 <input type="hidden" value="{{ tag.0 }}" class="nfc-receiver" name="id-nfc"/>
-                
+                <button type="submit">Submeter tag NFC</button>
                 <label for="name-nfc">Nome</label>
                 <input type="text" value="{{ tag.1 }}" name="name-nfc" />
 
