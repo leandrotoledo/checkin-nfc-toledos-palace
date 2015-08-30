@@ -19,10 +19,13 @@
                 {% for tag in tags %}
                 <label for="id-nfc" class="nfc-receiver-desc">Essa é a sua tag: {{ tag.0 }}</label>
                 <input type="hidden" value="{{ tag.0 }}" class="nfc-receiver" name="id-nfc"/>
-                <button type="submit">Submeter tag NFC</button>
+                <button class="button" type="submit">Submeter tag NFC</button>
+                {% endfor %}
+            </form>
+            <form class="info-container" method="post" action="/">
+                {% for tag in tags %}
                 <label for="name-nfc">Nome</label>
                 <input type="text" value="{{ tag.1 }}" name="name-nfc" />
-
                 <button class="button" type="submit">Entrar no palácio</button>
                 {% endfor %}
             </form>
