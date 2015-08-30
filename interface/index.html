@@ -1,27 +1,37 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="pt-br">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
+        <title>Toledo's Palace - Entrada</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-
-        <!--[if lt IE 9]>
-            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-        <![endif]-->
     </head>
     <body>
+        <header>
+            <p class="welcome-tag">Bem vindo ao <strong>Toledo's Palace</strong></p>
+            <small class="description">Hostel, Bar e Casa do ¡Jorge!</small>
+        </header>
+        <section class="intro-page">
+            <form method="post" action="teste.php">
+                <div id="step1">
+                    <h1>Identifique-se, humano!</h1>
+                    <label for="id-nfc" class="nfc-receiver-desc">Encoste seu celular com NFC no leitor.</label>
+                    <input type="hidden" class="nfc-receiver" name="id-nfc"/>
+                    <button type="submit" class="hidden"></button>
+                </div>
+            </form>
+        </section>
+        <!-- Trecho a ser adicionar após a verificação do NFC -->           
+        <div id="step-2" class="more-info hidden">
+            <h1>Só mais um passo.</h1>
+            <label for="name-nfc">Nome</label>
+            <input type="text" name="name-nfc" />
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-
+            <button type="submit" class="hidden">Entrar no palácio</button>
+        </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
         <script src="js/main.js"></script>
     </body>
 </html>
